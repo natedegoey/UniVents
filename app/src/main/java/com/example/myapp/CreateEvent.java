@@ -1,8 +1,10 @@
 package com.example.myapp;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import android.app.DatePickerDialog;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.text.InputType;
@@ -48,6 +50,9 @@ public class CreateEvent extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_create_event);
+
+        ActionBar actionBar = getSupportActionBar(); // or getActionBar();
+        getSupportActionBar().setTitle("Create Event");
 
         //EventName Code
         eText = (EditText) findViewById(R.id.editText0);
@@ -147,13 +152,23 @@ public class CreateEvent extends AppCompatActivity {
                     eText3.setError("Event location should not be blank!");
                 }
 
+                if (!eText.getText().toString().isEmpty() && !eText1.getText().toString().isEmpty()
+                    && !eText2.getText().toString().isEmpty()
+                        && !eText3.getText().toString().isEmpty()){
 
-                nameOfEvent = eText.getText().toString();
-                dateOfEvent = eText1.getText().toString();
-                timeOfEvent = eText2.getText().toString();
-                locationOfEvent = eText3.getText().toString();
-                if(typeOfEventTemp) typeOfEvent = "Personal";
-                else typeOfEvent="Education";
+                    nameOfEvent = eText.getText().toString();
+                    dateOfEvent = eText1.getText().toString();
+                    timeOfEvent = eText2.getText().toString();
+                    locationOfEvent = eText3.getText().toString();
+                    if(typeOfEventTemp) typeOfEvent = "Personal";
+                    else typeOfEvent="Education";
+
+                    finish();
+
+                }
+
+
+
             }
         });
 
