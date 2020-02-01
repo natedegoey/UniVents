@@ -3,6 +3,7 @@ package com.example.myapp;
 import androidx.appcompat.app.AppCompatActivity;
 import android.app.DatePickerDialog;
 
+import android.graphics.Color;
 import android.os.Bundle;
 import android.text.InputType;
 import android.view.View;
@@ -11,6 +12,9 @@ import android.widget.DatePicker;
 import android.widget.EditText;
 import java.util.Calendar;
 import android.app.TimePickerDialog;
+import android.widget.ImageButton;
+import android.widget.SeekBar;
+import android.widget.TextView;
 import android.widget.TimePicker;
 
 public class CreateEvent extends AppCompatActivity {
@@ -19,6 +23,8 @@ public class CreateEvent extends AppCompatActivity {
     String dateOfEvent;
     String timeOfEvent;
     String locationOfEvent;
+    boolean typeOfEvent;
+    int priceOfEvent;
 
     EditText eText;
 
@@ -30,7 +36,12 @@ public class CreateEvent extends AppCompatActivity {
 
     EditText eText3;
 
+    ImageButton btn;
+    ImageButton btn1;
+
     Button btnGet;
+
+    TextView tvProgressLabel;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,12 +49,12 @@ public class CreateEvent extends AppCompatActivity {
         setContentView(R.layout.activity_create_event);
 
         //EventName Code
-        eText=(EditText) findViewById(R.id.editText0);
+        eText = (EditText) findViewById(R.id.editText0);
         eText.setInputType(InputType.TYPE_CLASS_TEXT);
 
 
         //Date Picker Code
-        eText1=(EditText) findViewById(R.id.editText1);
+        eText1 = (EditText) findViewById(R.id.editText1);
         eText1.setInputType(InputType.TYPE_NULL);
         eText1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -61,11 +72,12 @@ public class CreateEvent extends AppCompatActivity {
                             }
                         }, year, month, day);
                 picker1.show();
+
             }
         });
 
         //Time Picker Code
-        eText2=(EditText) findViewById(R.id.editText2);
+        eText2 = (EditText) findViewById(R.id.editText2);
         eText2.setInputType(InputType.TYPE_NULL);
         eText2.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -86,34 +98,54 @@ public class CreateEvent extends AppCompatActivity {
         });
 
         //EventName Code
-        eText3=(EditText) findViewById(R.id.editText3);
+        eText3 = (EditText) findViewById(R.id.editText3);
         eText3.setInputType(InputType.TYPE_CLASS_TEXT);
 
+        //Personal Code
+        btn = findViewById(R.id.imageButton0);
+        btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                typeOfEvent = true;
+                btn1.setColorFilter(null);
+                btn.setColorFilter(Color.argb(255, 255, 255, 255));
+            }
+        });
+
+        //Education Code
+        btn1 = findViewById(R.id.imageButton1);
+        btn1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                typeOfEvent = false;
+                btn.setColorFilter(null);
+                btn1.setColorFilter(Color.argb(255, 255, 255, 255));
+            }
+        });
+
+
         //Submit Button
-        btnGet=(Button)findViewById(R.id.button0);
+        btnGet = (Button) findViewById(R.id.button0);
         btnGet.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                if(eText.getText().toString().isEmpty())
-                {
+                if (eText.getText().toString().isEmpty()) {
                     eText.setError("Event name should not be blank!");
                 }
 
-                if(eText1.getText().toString().isEmpty())
-                {
+                if (eText1.getText().toString().isEmpty()) {
                     eText1.setError("Event date should not be blank!");
                 }
 
-                if(eText2.getText().toString().isEmpty())
-                {
+                if (eText2.getText().toString().isEmpty()) {
                     eText2.setError("Event time should not be blank!");
                 }
 
-                if(eText3.getText().toString().isEmpty())
-                {
+                if (eText3.getText().toString().isEmpty()) {
                     eText3.setError("Event location should not be blank!");
                 }
+
 
                 nameOfEvent = eText.getText().toString();
                 dateOfEvent = eText1.getText().toString();
@@ -122,5 +154,35 @@ public class CreateEvent extends AppCompatActivity {
             }
         });
 
+        // set a change listener on the SeekBar
+        SeekBar seekBar = findViewById(R.id.seekBar);
+        seekBar.setOnSeekBarChangeListener(seekBarChangeListener);
+
+        int progress = seekBar.getProgress();
+        tvProgressLabel = findViewById(R.id.textView);
+        tvProgressLabel.setText("Price: $" + progress);
+
     }
+
+    SeekBar.OnSeekBarChangeListener seekBarChangeListener = new SeekBar.OnSeekBarChangeListener() {
+
+        @Override
+        public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
+            // updated continuously as the user slides the thumb
+            tvProgressLabel.setText("Price: $" + progress);
+            priceOfEvent = progress;
+        }
+
+        @Override
+        public void onStartTrackingTouch(SeekBar seekBar) {
+            // called when the user first touches the SeekBar
+        }
+
+        @Override
+        public void onStopTrackingTouch(SeekBar seekBar) {
+            // called after the user finishes moving the SeekBar
+        }
+
+    };
+
 }
