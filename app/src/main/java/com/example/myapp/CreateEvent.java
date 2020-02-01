@@ -23,7 +23,8 @@ public class CreateEvent extends AppCompatActivity {
     String dateOfEvent;
     String timeOfEvent;
     String locationOfEvent;
-    boolean typeOfEvent;
+    boolean typeOfEventTemp;
+    String typeOfEvent;
     int priceOfEvent;
 
     EditText eText;
@@ -106,7 +107,7 @@ public class CreateEvent extends AppCompatActivity {
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                typeOfEvent = true;
+                typeOfEventTemp = true;
                 btn1.setColorFilter(null);
                 btn.setColorFilter(Color.argb(255, 255, 255, 255));
             }
@@ -117,7 +118,7 @@ public class CreateEvent extends AppCompatActivity {
         btn1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                typeOfEvent = false;
+                typeOfEventTemp = false;
                 btn.setColorFilter(null);
                 btn1.setColorFilter(Color.argb(255, 255, 255, 255));
             }
@@ -151,6 +152,8 @@ public class CreateEvent extends AppCompatActivity {
                 dateOfEvent = eText1.getText().toString();
                 timeOfEvent = eText2.getText().toString();
                 locationOfEvent = eText3.getText().toString();
+                if(typeOfEventTemp) typeOfEvent = "Personal";
+                else typeOfEvent="Education";
             }
         });
 
