@@ -32,6 +32,7 @@ public class PersonalFragment extends Fragment {
     TextView title;
     TextView date;
     TextView time;
+    TextView loco;
     FloatingActionButton arrow;
     FloatingActionButton location;
     int i=0;
@@ -42,8 +43,9 @@ public class PersonalFragment extends Fragment {
         View root = inflater.inflate(R.layout.fragment_personal, container, false);
 
         title = (TextView) root.findViewById(R.id.textView);
-        date = (TextView) root.findViewById(R.id.textView2);
-        time = (TextView) root.findViewById(R.id.textView3);
+        loco = (TextView) root.findViewById(R.id.textView2);
+        date = (TextView) root.findViewById(R.id.textView3);
+        time = (TextView) root.findViewById(R.id.textView4);
         arrow = (FloatingActionButton) root.findViewById(R.id.floatingActionButton2);
         location = (FloatingActionButton) root.findViewById(R.id.floatingActionButton3);
 
@@ -72,6 +74,7 @@ public class PersonalFragment extends Fragment {
                 title.setText(events[i].getTitle());
                 date.setText("Date: "+events[i].getDate());
                 time.setText("Time: "+events[i].getTime());
+                loco.setText("Location: "+events[i].getLocation());
 
                 arrow.setOnClickListener(new View.OnClickListener() {
                     @Override
@@ -85,6 +88,7 @@ public class PersonalFragment extends Fragment {
                         title.setText(events[i].getTitle());
                         date.setText("Date: "+events[i].getDate());
                         time.setText("Time: "+events[i].getTime());
+                        loco.setText("Location: "+events[i].getLocation());
                     }
                 });
 

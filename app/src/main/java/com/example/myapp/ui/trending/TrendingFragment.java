@@ -31,6 +31,7 @@ public class TrendingFragment extends Fragment {
     TextView title;
     TextView date;
     TextView time;
+    TextView loco;
     FloatingActionButton arrow;
     FloatingActionButton location;
     int i=0;
@@ -40,9 +41,11 @@ public class TrendingFragment extends Fragment {
 
         View root = inflater.inflate(R.layout.fragment_trending, container, false);
 
+
         title = (TextView) root.findViewById(R.id.textView);
-        date = (TextView) root.findViewById(R.id.textView2);
-        time = (TextView) root.findViewById(R.id.textView3);
+        loco = (TextView) root.findViewById(R.id.textView2);
+        date = (TextView) root.findViewById(R.id.textView3);
+        time = (TextView) root.findViewById(R.id.textView4);
         arrow = (FloatingActionButton) root.findViewById(R.id.floatingActionButton2);
         location = (FloatingActionButton) root.findViewById(R.id.floatingActionButton3);
 
@@ -55,6 +58,7 @@ public class TrendingFragment extends Fragment {
                 int counter = 0;
                 for (DataSnapshot child: dataSnapshot.getChildren()) {
                     Event event = new Event();
+
                     event.setTitle(dataSnapshot.child(child.getKey()).child("title").getValue().toString());
                     event.setDate(dataSnapshot.child(child.getKey()).child("date").getValue().toString());
                     event.setTime(dataSnapshot.child(child.getKey()).child("time").getValue().toString());
@@ -68,6 +72,7 @@ public class TrendingFragment extends Fragment {
                 title.setText(events[i].getTitle());
                 date.setText("Date: "+events[i].getDate());
                 time.setText("Time: "+events[i].getTime());
+                loco.setText("Location: "+events[i].getLocation());
 
                 arrow.setOnClickListener(new View.OnClickListener() {
                     @Override
@@ -81,6 +86,7 @@ public class TrendingFragment extends Fragment {
                         title.setText(events[i].getTitle());
                         date.setText("Date: "+events[i].getDate());
                         time.setText("Time: "+events[i].getTime());
+                        loco.setText("Location: "+events[i].getLocation());
                     }
                 });
 
