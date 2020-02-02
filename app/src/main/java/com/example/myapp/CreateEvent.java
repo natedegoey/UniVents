@@ -50,24 +50,19 @@ public class CreateEvent extends AppCompatActivity {
 
     TextView tvProgressLabel;
 
+    DatabaseReference reff;
+    Event event = new Event();
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_create_event);
         FirebaseApp.initializeApp(this);
 
-        DatabaseReference reff;
-        Event event = new Event();
+
         reff = FirebaseDatabase.getInstance().getReference().child("Event");
 
-        event.setTitle("wwwwwww");
-        event.setLocation("queens");
-        event.setDate("feb 2");
-        event.setType("Educational");
-        event.setHost("kirill");
-        event.setTime("4:20");
-        event.setPrice("$1");
-        reff.push().setValue(event);
+
 
         ActionBar actionBar = getSupportActionBar(); // or getActionBar();
         getSupportActionBar().setTitle("Create Event");
@@ -184,6 +179,15 @@ public class CreateEvent extends AppCompatActivity {
                     locationOfEvent = eText3.getText().toString();
                     if(typeOfEventTemp) typeOfEvent = "Personal";
                     else typeOfEvent="Education";
+
+                    event.setTitle(nameOfEvent);
+                    event.setLocation(locationOfEvent);
+                    event.setDate(dateOfEvent);
+                    event.setType(typeOfEvent);
+                    event.setHost("kirill");
+                    event.setTime(timeOfEvent);
+                    event.setPrice(priceOfEvent);
+                    reff.push().setValue(event);
 
                     finish();
 
