@@ -1,5 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<adaptive-icon xmlns:android="http://schemas.android.com/apk/res/android">
-    <background android:drawable="@drawable/ic_launcher_background" />
-    <foreground android:drawable="@drawable/ic_launcher_foreground" />
-</adaptive-icon>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="1000dp"
+    android:height="1000dp"
+    android:viewportWidth="1000"
+    android:viewportHeight="1000">
+
+    <path
+        android:fillColor="#fdbe11"
+        android:pathData="M 500.8 1.6 C 776.500547116 1.6 1000 225.099452884 1000 500.8 C 1000 776.500547116 776.500547116 1000 500.8 1000 C 225.099452884 1000 1.6 776.500547116 1.6 500.8 C 1.6 225.099452884 225.099452884 1.6 500.8 1.6 Z" />
+    <path
+        android:fillColor="#1b305c"
+        android:pathData="M366,390h98.73L564.77,681.42l17.58,62.2h5.41l18.94-62.2L710.82,390h98.72L633.07,874.12h-96Z" />
+    <path
+        android:fillColor="#b91f37"
+        android:pathData="M415.8,642q-42.6,0-77.42-13.87a159.47,159.47,0,0,1-59.16-40.23Q254.88,561.51,241.36,524t-13.53-85.53V147h91.28V443.87a155,155,0,0,0,6.08,44.62,100.28,100.28,0,0,0,18.27,35.16A84.39,84.39,0,0,0,373.88,547q18.25,8.46,41.92,8.45,24.34,0,42.6-8.45a84.6,84.6,0,0,0,30.43-23.33,100.41,100.41,0,0,0,18.25-35.16,154.7,154.7,0,0,0,6.08-44.62V147h91.29V438.46q0,45.3-13.19,82.82T553.4,585.52a171.84,171.84,0,0,1-59.5,41.58Q459.06,642,415.8,642Z" />
+</vector>
