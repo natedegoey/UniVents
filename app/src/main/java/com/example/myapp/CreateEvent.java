@@ -178,15 +178,15 @@ public class CreateEvent extends AppCompatActivity {
                     priceOfEvent = eText4.getText().toString();
                     locationOfEvent = eText3.getText().toString();
                     if(typeOfEventTemp) typeOfEvent = "Personal";
-                    else typeOfEvent="Education";
+                    else typeOfEvent="Educational";
 
                     event.setTitle(nameOfEvent);
                     event.setLocation(locationOfEvent);
                     event.setDate(dateOfEvent);
                     event.setType(typeOfEvent);
-                    event.setHost("kirill");
                     event.setTime(timeOfEvent);
                     event.setPrice(priceOfEvent);
+                    event.setLikes(0);
                     reff.push().setValue(event);
 
                     finish();

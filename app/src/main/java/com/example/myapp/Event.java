@@ -7,10 +7,18 @@ public class Event {
     private String time;
     private String type;
     private String price;
-    private String host;
+    private int likes;
 
     public Event(){
 
+    }
+
+    public int getLikes() {
+        return likes;
+    }
+
+    public void setLikes(int likes) {
+        this.likes = likes;
     }
 
     public String getTitle() {
@@ -43,14 +51,6 @@ public class Event {
 
     public void setType(String type) {
         this.type = type;
-    }
-
-    public String getHost() {
-        return host;
-    }
-
-    public void setHost(String host) {
-        this.host = host;
     }
 
     public String getTime() {
