@@ -7,18 +7,9 @@ public class Event {
     private String time;
     private String type;
     private String price;
-    private int likes;
 
     public Event(){
 
-    }
-
-    public int getLikes() {
-        return likes;
-    }
-
-    public void setLikes(int likes) {
-        this.likes = likes;
     }
 
     public String getTitle() {

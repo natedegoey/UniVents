@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\kiril\AndroidStudioProjects\QHACKS-2020---UniVert\app\src\main\AndroidManifest.xml:2:1-24:12
-INJECTED from C:\Users\kiril\AndroidStudioProjects\QHACKS-2020---UniVert\app\src\main\AndroidManifest.xml:2:1-24:12
-INJECTED from C:\Users\kiril\AndroidStudioProjects\QHACKS-2020---UniVert\app\src\main\AndroidManifest.xml:2:1-24:12
-INJECTED from C:\Users\kiril\AndroidStudioProjects\QHACKS-2020---UniVert\app\src\main\AndroidManifest.xml:2:1-24:12
+ADDED from C:\Users\kiril\OneDrive\Documents\GitHub\QHACKS-2020---UniVert\app\src\main\AndroidManifest.xml:2:1-24:12
+INJECTED from C:\Users\kiril\OneDrive\Documents\GitHub\QHACKS-2020---UniVert\app\src\main\AndroidManifest.xml:2:1-24:12
+INJECTED from C:\Users\kiril\OneDrive\Documents\GitHub\QHACKS-2020---UniVert\app\src\main\AndroidManifest.xml:2:1-24:12
+INJECTED from C:\Users\kiril\OneDrive\Documents\GitHub\QHACKS-2020---UniVert\app\src\main\AndroidManifest.xml:2:1-24:12
 MERGED from [androidx.navigation:navigation-ui:2.2.0] C:\Users\kiril\.gradle\caches\transforms-2\files-2.1\f755413055a77b211df243258801de11\jetified-navigation-ui-2.2.0\AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.material:material:1.0.0] C:\Users\kiril\.gradle\caches\transforms-2\files-2.1\d2d00a4c2f8dea53b875d3c08b032e26\material-1.0.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.appcompat:appcompat:1.1.0] C:\Users\kiril\.gradle\caches\transforms-2\files-2.1\ed8918cb919ef3f23ad2c5ea12fc2702\appcompat-1.1.0\AndroidManifest.xml:17:1-24:12
@@ -69,25 +69,25 @@ MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\kiril\.gradle\ca
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\kiril\.gradle\caches\transforms-2\files-2.1\4cfd28d989f1c5b47bd5df152908b3d5\localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.print:print:1.0.0] C:\Users\kiril\.gradle\caches\transforms-2\files-2.1\57c93e9363456163f99b2537ed5b306f\print-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.firebase:firebase-database-collection:17.0.0] C:\Users\kiril\.gradle\caches\transforms-2\files-2.1\398f5992d45dcc1e6d7839f86859961c\firebase-database-collection-17.0.0\AndroidManifest.xml:2:1-7:12
-INJECTED from C:\Users\kiril\AndroidStudioProjects\QHACKS-2020---UniVert\app\src\main\AndroidManifest.xml:2:1-24:12
-INJECTED from C:\Users\kiril\AndroidStudioProjects\QHACKS-2020---UniVert\app\src\main\AndroidManifest.xml:2:1-24:12
-INJECTED from C:\Users\kiril\AndroidStudioProjects\QHACKS-2020---UniVert\app\src\main\AndroidManifest.xml:2:1-24:12
+INJECTED from C:\Users\kiril\OneDrive\Documents\GitHub\QHACKS-2020---UniVert\app\src\main\AndroidManifest.xml:2:1-24:12
+INJECTED from C:\Users\kiril\OneDrive\Documents\GitHub\QHACKS-2020---UniVert\app\src\main\AndroidManifest.xml:2:1-24:12
+INJECTED from C:\Users\kiril\OneDrive\Documents\GitHub\QHACKS-2020---UniVert\app\src\main\AndroidManifest.xml:2:1-24:12
 	package
-		ADDED from C:\Users\kiril\AndroidStudioProjects\QHACKS-2020---UniVert\app\src\main\AndroidManifest.xml:3:5-32
-		INJECTED from C:\Users\kiril\AndroidStudioProjects\QHACKS-2020---UniVert\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\kiril\AndroidStudioProjects\QHACKS-2020---UniVert\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\kiril\OneDrive\Documents\GitHub\QHACKS-2020---UniVert\app\src\main\AndroidManifest.xml:3:5-32
+		INJECTED from C:\Users\kiril\OneDrive\Documents\GitHub\QHACKS-2020---UniVert\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\kiril\OneDrive\Documents\GitHub\QHACKS-2020---UniVert\app\src\main\AndroidManifest.xml
 	android:versionName
-		INJECTED from C:\Users\kiril\AndroidStudioProjects\QHACKS-2020---UniVert\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\kiril\AndroidStudioProjects\QHACKS-2020---UniVert\app\src\main\AndroidManifest.xml:2:1-24:12
-		INJECTED from C:\Users\kiril\AndroidStudioProjects\QHACKS-2020---UniVert\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\kiril\OneDrive\Documents\GitHub\QHACKS-2020---UniVert\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\kiril\OneDrive\Documents\GitHub\QHACKS-2020---UniVert\app\src\main\AndroidManifest.xml:2:1-24:12
+		INJECTED from C:\Users\kiril\OneDrive\Documents\GitHub\QHACKS-2020---UniVert\app\src\main\AndroidManifest.xml
 	android:versionCode
-		INJECTED from C:\Users\kiril\AndroidStudioProjects\QHACKS-2020---UniVert\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\kiril\AndroidStudioProjects\QHACKS-2020---UniVert\app\src\main\AndroidManifest.xml:2:1-24:12
-		INJECTED from C:\Users\kiril\AndroidStudioProjects\QHACKS-2020---UniVert\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\kiril\OneDrive\Documents\GitHub\QHACKS-2020---UniVert\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\kiril\OneDrive\Documents\GitHub\QHACKS-2020---UniVert\app\src\main\AndroidManifest.xml:2:1-24:12
+		INJECTED from C:\Users\kiril\OneDrive\Documents\GitHub\QHACKS-2020---UniVert\app\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from C:\Users\kiril\AndroidStudioProjects\QHACKS-2020---UniVert\app\src\main\AndroidManifest.xml:2:11-69
+		ADDED from C:\Users\kiril\OneDrive\Documents\GitHub\QHACKS-2020---UniVert\app\src\main\AndroidManifest.xml:2:11-69
 application
-ADDED from C:\Users\kiril\AndroidStudioProjects\QHACKS-2020---UniVert\app\src\main\AndroidManifest.xml:5:5-22:19
+ADDED from C:\Users\kiril\OneDrive\Documents\GitHub\QHACKS-2020---UniVert\app\src\main\AndroidManifest.xml:5:5-22:19
 MERGED from [com.google.android.material:material:1.0.0] C:\Users\kiril\.gradle\caches\transforms-2\files-2.1\d2d00a4c2f8dea53b875d3c08b032e26\material-1.0.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.0.0] C:\Users\kiril\.gradle\caches\transforms-2\files-2.1\d2d00a4c2f8dea53b875d3c08b032e26\material-1.0.0\AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\kiril\.gradle\caches\transforms-2\files-2.1\2ca49ef2fb32b36e88d727143c960bd7\constraintlayout-1.1.3\AndroidManifest.xml:9:5-20
@@ -139,41 +139,41 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\ki
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.1.0] C:\Users\kiril\.gradle\caches\transforms-2\files-2.1\2164599aef995230b26d0a3b084cc8c7\core-1.1.0\AndroidManifest.xml:24:18-86
 	android:supportsRtl
-		ADDED from C:\Users\kiril\AndroidStudioProjects\QHACKS-2020---UniVert\app\src\main\AndroidManifest.xml:10:9-35
+		ADDED from C:\Users\kiril\OneDrive\Documents\GitHub\QHACKS-2020---UniVert\app\src\main\AndroidManifest.xml:10:9-35
 	android:label
-		ADDED from C:\Users\kiril\AndroidStudioProjects\QHACKS-2020---UniVert\app\src\main\AndroidManifest.xml:8:9-41
+		ADDED from C:\Users\kiril\OneDrive\Documents\GitHub\QHACKS-2020---UniVert\app\src\main\AndroidManifest.xml:8:9-41
 	android:roundIcon
-		ADDED from C:\Users\kiril\AndroidStudioProjects\QHACKS-2020---UniVert\app\src\main\AndroidManifest.xml:9:9-54
+		ADDED from C:\Users\kiril\OneDrive\Documents\GitHub\QHACKS-2020---UniVert\app\src\main\AndroidManifest.xml:9:9-54
 	android:icon
-		ADDED from C:\Users\kiril\AndroidStudioProjects\QHACKS-2020---UniVert\app\src\main\AndroidManifest.xml:7:9-43
+		ADDED from C:\Users\kiril\OneDrive\Documents\GitHub\QHACKS-2020---UniVert\app\src\main\AndroidManifest.xml:7:9-43
 	android:allowBackup
-		ADDED from C:\Users\kiril\AndroidStudioProjects\QHACKS-2020---UniVert\app\src\main\AndroidManifest.xml:6:9-35
+		ADDED from C:\Users\kiril\OneDrive\Documents\GitHub\QHACKS-2020---UniVert\app\src\main\AndroidManifest.xml:6:9-35
 	android:theme
-		ADDED from C:\Users\kiril\AndroidStudioProjects\QHACKS-2020---UniVert\app\src\main\AndroidManifest.xml:11:9-40
+		ADDED from C:\Users\kiril\OneDrive\Documents\GitHub\QHACKS-2020---UniVert\app\src\main\AndroidManifest.xml:11:9-40
 activity#com.example.myapp.CreateEvent
-ADDED from C:\Users\kiril\AndroidStudioProjects\QHACKS-2020---UniVert\app\src\main\AndroidManifest.xml:12:9-58
+ADDED from C:\Users\kiril\OneDrive\Documents\GitHub\QHACKS-2020---UniVert\app\src\main\AndroidManifest.xml:12:9-58
 	android:name
-		ADDED from C:\Users\kiril\AndroidStudioProjects\QHACKS-2020---UniVert\app\src\main\AndroidManifest.xml:12:19-46
+		ADDED from C:\Users\kiril\OneDrive\Documents\GitHub\QHACKS-2020---UniVert\app\src\main\AndroidManifest.xml:12:19-46
 activity#com.example.myapp.MainActivity
-ADDED from C:\Users\kiril\AndroidStudioProjects\QHACKS-2020---UniVert\app\src\main\AndroidManifest.xml:13:9-21:20
+ADDED from C:\Users\kiril\OneDrive\Documents\GitHub\QHACKS-2020---UniVert\app\src\main\AndroidManifest.xml:13:9-21:20
 	android:label
-		ADDED from C:\Users\kiril\AndroidStudioProjects\QHACKS-2020---UniVert\app\src\main\AndroidManifest.xml:15:13-45
+		ADDED from C:\Users\kiril\OneDrive\Documents\GitHub\QHACKS-2020---UniVert\app\src\main\AndroidManifest.xml:15:13-45
 	android:name
-		ADDED from C:\Users\kiril\AndroidStudioProjects\QHACKS-2020---UniVert\app\src\main\AndroidManifest.xml:14:13-41
+		ADDED from C:\Users\kiril\OneDrive\Documents\GitHub\QHACKS-2020---UniVert\app\src\main\AndroidManifest.xml:14:13-41
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\kiril\AndroidStudioProjects\QHACKS-2020---UniVert\app\src\main\AndroidManifest.xml:16:13-20:29
+ADDED from C:\Users\kiril\OneDrive\Documents\GitHub\QHACKS-2020---UniVert\app\src\main\AndroidManifest.xml:16:13-20:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\kiril\AndroidStudioProjects\QHACKS-2020---UniVert\app\src\main\AndroidManifest.xml:17:17-69
+ADDED from C:\Users\kiril\OneDrive\Documents\GitHub\QHACKS-2020---UniVert\app\src\main\AndroidManifest.xml:17:17-69
 	android:name
-		ADDED from C:\Users\kiril\AndroidStudioProjects\QHACKS-2020---UniVert\app\src\main\AndroidManifest.xml:17:25-66
+		ADDED from C:\Users\kiril\OneDrive\Documents\GitHub\QHACKS-2020---UniVert\app\src\main\AndroidManifest.xml:17:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\kiril\AndroidStudioProjects\QHACKS-2020---UniVert\app\src\main\AndroidManifest.xml:19:17-77
+ADDED from C:\Users\kiril\OneDrive\Documents\GitHub\QHACKS-2020---UniVert\app\src\main\AndroidManifest.xml:19:17-77
 	android:name
-		ADDED from C:\Users\kiril\AndroidStudioProjects\QHACKS-2020---UniVert\app\src\main\AndroidManifest.xml:19:27-74
+		ADDED from C:\Users\kiril\OneDrive\Documents\GitHub\QHACKS-2020---UniVert\app\src\main\AndroidManifest.xml:19:27-74
 uses-sdk
-INJECTED from C:\Users\kiril\AndroidStudioProjects\QHACKS-2020---UniVert\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from C:\Users\kiril\AndroidStudioProjects\QHACKS-2020---UniVert\app\src\main\AndroidManifest.xml
-INJECTED from C:\Users\kiril\AndroidStudioProjects\QHACKS-2020---UniVert\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\kiril\OneDrive\Documents\GitHub\QHACKS-2020---UniVert\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\kiril\OneDrive\Documents\GitHub\QHACKS-2020---UniVert\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\kiril\OneDrive\Documents\GitHub\QHACKS-2020---UniVert\app\src\main\AndroidManifest.xml
 MERGED from [androidx.navigation:navigation-ui:2.2.0] C:\Users\kiril\.gradle\caches\transforms-2\files-2.1\f755413055a77b211df243258801de11\jetified-navigation-ui-2.2.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.navigation:navigation-ui:2.2.0] C:\Users\kiril\.gradle\caches\transforms-2\files-2.1\f755413055a77b211df243258801de11\jetified-navigation-ui-2.2.0\AndroidManifest.xml:20:5-22:41
 MERGED from [com.google.android.material:material:1.0.0] C:\Users\kiril\.gradle\caches\transforms-2\files-2.1\d2d00a4c2f8dea53b875d3c08b032e26\material-1.0.0\AndroidManifest.xml:20:5-44
@@ -304,16 +304,16 @@ MERGED from [androidx.print:print:1.0.0] C:\Users\kiril\.gradle\caches\transform
 MERGED from [androidx.print:print:1.0.0] C:\Users\kiril\.gradle\caches\transforms-2\files-2.1\57c93e9363456163f99b2537ed5b306f\print-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [com.google.firebase:firebase-database-collection:17.0.0] C:\Users\kiril\.gradle\caches\transforms-2\files-2.1\398f5992d45dcc1e6d7839f86859961c\firebase-database-collection-17.0.0\AndroidManifest.xml:5:5-44
 MERGED from [com.google.firebase:firebase-database-collection:17.0.0] C:\Users\kiril\.gradle\caches\transforms-2\files-2.1\398f5992d45dcc1e6d7839f86859961c\firebase-database-collection-17.0.0\AndroidManifest.xml:5:5-44
-INJECTED from C:\Users\kiril\AndroidStudioProjects\QHACKS-2020---UniVert\app\src\main\AndroidManifest.xml
-INJECTED from C:\Users\kiril\AndroidStudioProjects\QHACKS-2020---UniVert\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\kiril\OneDrive\Documents\GitHub\QHACKS-2020---UniVert\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\kiril\OneDrive\Documents\GitHub\QHACKS-2020---UniVert\app\src\main\AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from C:\Users\kiril\AndroidStudioProjects\QHACKS-2020---UniVert\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\kiril\AndroidStudioProjects\QHACKS-2020---UniVert\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\kiril\AndroidStudioProjects\QHACKS-2020---UniVert\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\kiril\OneDrive\Documents\GitHub\QHACKS-2020---UniVert\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\kiril\OneDrive\Documents\GitHub\QHACKS-2020---UniVert\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\kiril\OneDrive\Documents\GitHub\QHACKS-2020---UniVert\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from C:\Users\kiril\AndroidStudioProjects\QHACKS-2020---UniVert\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\kiril\AndroidStudioProjects\QHACKS-2020---UniVert\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\kiril\AndroidStudioProjects\QHACKS-2020---UniVert\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\kiril\OneDrive\Documents\GitHub\QHACKS-2020---UniVert\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\kiril\OneDrive\Documents\GitHub\QHACKS-2020---UniVert\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\kiril\OneDrive\Documents\GitHub\QHACKS-2020---UniVert\app\src\main\AndroidManifest.xml
 uses-permission#android.permission.ACCESS_NETWORK_STATE
 ADDED from [com.google.firebase:firebase-database:19.2.1] C:\Users\kiril\.gradle\caches\transforms-2\files-2.1\89ff2d7a7ae2eabf6c9846bad7790f8c\firebase-database-19.2.1\AndroidManifest.xml:25:5-79
 MERGED from [com.google.android.gms:play-services-measurement:17.2.2] C:\Users\kiril\.gradle\caches\transforms-2\files-2.1\c164c6e2cfcb7e84be16b086917a2ef0\play-services-measurement-17.2.2\AndroidManifest.xml:24:5-79

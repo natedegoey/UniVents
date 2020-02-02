@@ -186,7 +186,6 @@ public class CreateEvent extends AppCompatActivity {
                     event.setType(typeOfEvent);
                     event.setTime(timeOfEvent);
                     event.setPrice(priceOfEvent);
-                    event.setLikes(0);
                     reff.push().setValue(event);
 
                     finish();

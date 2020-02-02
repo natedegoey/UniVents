@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\kiril\\AndroidStudioProjects\\QHACKS-2020---UniVert\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-gu\\values-gu.xml",
+            "outputFile": "C:\\Users\\kiril\\OneDrive\\Documents\\GitHub\\QHACKS-2020---UniVert\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-gu\\values-gu.xml",
             "map": [
                 {
                     "source": "C:\\Users\\kiril\\.gradle\\caches\\transforms-2\\files-2.1\\b4442a00fe64f8aab7ee8a84489744c8\\jetified-play-services-basement-17.0.0\\res\\values-gu\\values.xml",

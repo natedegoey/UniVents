@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\kiril\\AndroidStudioProjects\\QHACKS-2020---UniVert\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v23\\values-v23.xml",
+            "outputFile": "C:\\Users\\kiril\\OneDrive\\Documents\\GitHub\\QHACKS-2020---UniVert\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v23\\values-v23.xml",
             "map": [
                 {
                     "source": "C:\\Users\\kiril\\.gradle\\caches\\transforms-2\\files-2.1\\4aecddad0552cf9130837b6a32e5391a\\cardview-1.0.0\\res\\values-v23\\values-v23.xml",

@@ -55,7 +55,6 @@ public class PersonalFragment extends Fragment {
                     event.setLocation(dataSnapshot.child(child.getKey()).child("location").getValue().toString());
                     event.setPrice(dataSnapshot.child(child.getKey()).child("price").getValue().toString());
                     event.setType(dataSnapshot.child(child.getKey()).child("type").getValue().toString());
-                    event.setLikes((int)dataSnapshot.child(child.getKey()).child("likes").getValue());
                     events[counter] = event;
                     counter++;
                 }

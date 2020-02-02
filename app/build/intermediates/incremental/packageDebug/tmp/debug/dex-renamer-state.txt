@@ -1,7 +1,7 @@
-#Sun Feb 02 02:55:31 EST 2020
-base.0=C\:\\Users\\kiril\\AndroidStudioProjects\\QHACKS-2020---UniVert\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\out\\classes.dex
+#Sun Feb 02 04:19:32 EST 2020
+base.0=C\:\\Users\\kiril\\OneDrive\\Documents\\GitHub\\QHACKS-2020---UniVert\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\out\\classes.dex
 path.1=classes.dex
 renamed.1=classes2.dex
 path.0=classes.dex
 renamed.0=classes.dex
-base.1=C\:\\Users\\kiril\\AndroidStudioProjects\\QHACKS-2020---UniVert\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\out\\classes.dex
+base.1=C\:\\Users\\kiril\\OneDrive\\Documents\\GitHub\\QHACKS-2020---UniVert\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\out\\classes.dex
