@@ -39,12 +39,22 @@
         android:ems="10"
         android:hint="Enter Address" />
 
+    <EditText
+        android:id="@+id/editText4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="350dp"
+        android:inputType="number"
+        android:ems="10"
+        android:hint="Enter Ticket Price" />
+
     <Button
         android:id="@+id/button0"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/seekBar"
-        android:layout_marginLeft="150dp"
+        android:layout_below="@+id/imageButton0"
+        android:layout_marginLeft="145dp"
         android:layout_marginTop="25dp"
         android:text="Create Event!" />
 
@@ -52,7 +62,7 @@
         android:id="@+id/imageButton0"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/editText3"
+        android:layout_below="@+id/editText4"
         android:layout_marginLeft="150dp"
         android:layout_marginTop="25dp"
         app:srcCompat="@drawable/personal" />
@@ -61,29 +71,11 @@
         android:id="@+id/imageButton1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/editText3"
+        android:layout_below="@+id/editText4"
         android:layout_marginLeft="225dp"
         android:layout_marginTop="25dp"
         app:srcCompat="@drawable/education" />
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_margin="20dp"
-        android:layout_width="wrap_content"
-        android:layout_below="@+id/imageButton1"
-        android:layout_marginTop="5dp"
-        android:layout_marginBottom="20dp"
-        android:layout_height="wrap_content"/>
-
-    <SeekBar
-        android:id="@+id/seekBar"
-        android:max="50"
-        android:progress="0"
-        android:maxWidth="10dp"
-        android:layout_below="@+id/textView"
-        android:layout_width="match_parent"
-
-        android:layout_height="wrap_content"/>
 
 
 </RelativeLayout>

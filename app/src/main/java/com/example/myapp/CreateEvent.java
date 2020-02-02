@@ -27,7 +27,7 @@ public class CreateEvent extends AppCompatActivity {
     String locationOfEvent;
     boolean typeOfEventTemp;
     String typeOfEvent;
-    int priceOfEvent;
+    String priceOfEvent="";
 
     EditText eText;
 
@@ -38,6 +38,8 @@ public class CreateEvent extends AppCompatActivity {
     EditText eText2;
 
     EditText eText3;
+
+    EditText eText4;
 
     ImageButton btn;
     ImageButton btn1;
@@ -103,9 +105,12 @@ public class CreateEvent extends AppCompatActivity {
             }
         });
 
-        //EventName Code
+        //Address Code
         eText3 = (EditText) findViewById(R.id.editText3);
         eText3.setInputType(InputType.TYPE_CLASS_TEXT);
+
+        //Ticket Code
+        eText4 = (EditText) findViewById(R.id.editText4);
 
         //Personal Code
         btn = findViewById(R.id.imageButton0);
@@ -114,7 +119,7 @@ public class CreateEvent extends AppCompatActivity {
             public void onClick(View v) {
                 typeOfEventTemp = true;
                 btn1.setColorFilter(null);
-                btn.setColorFilter(Color.argb(255, 255, 255, 255));
+                btn.setColorFilter(Color.argb(255, 254, 191, 8));
             }
         });
 
@@ -125,7 +130,7 @@ public class CreateEvent extends AppCompatActivity {
             public void onClick(View v) {
                 typeOfEventTemp = false;
                 btn.setColorFilter(null);
-                btn1.setColorFilter(Color.argb(255, 255, 255, 255));
+                btn1.setColorFilter(Color.argb(255, 254, 191, 8));
             }
         });
 
@@ -159,6 +164,7 @@ public class CreateEvent extends AppCompatActivity {
                     nameOfEvent = eText.getText().toString();
                     dateOfEvent = eText1.getText().toString();
                     timeOfEvent = eText2.getText().toString();
+                    priceOfEvent = eText4.getText().toString();
                     locationOfEvent = eText3.getText().toString();
                     if(typeOfEventTemp) typeOfEvent = "Personal";
                     else typeOfEvent="Education";
@@ -172,35 +178,7 @@ public class CreateEvent extends AppCompatActivity {
             }
         });
 
-        // set a change listener on the SeekBar
-        SeekBar seekBar = findViewById(R.id.seekBar);
-        seekBar.setOnSeekBarChangeListener(seekBarChangeListener);
-
-        int progress = seekBar.getProgress();
-        tvProgressLabel = findViewById(R.id.textView);
-        tvProgressLabel.setText("Price: $" + progress);
 
     }
-
-    SeekBar.OnSeekBarChangeListener seekBarChangeListener = new SeekBar.OnSeekBarChangeListener() {
-
-        @Override
-        public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
-            // updated continuously as the user slides the thumb
-            tvProgressLabel.setText("Price: $" + progress);
-            priceOfEvent = progress;
-        }
-
-        @Override
-        public void onStartTrackingTouch(SeekBar seekBar) {
-            // called when the user first touches the SeekBar
-        }
-
-        @Override
-        public void onStopTrackingTouch(SeekBar seekBar) {
-            // called after the user finishes moving the SeekBar
-        }
-
-    };
 
 }
