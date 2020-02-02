@@ -4,7 +4,6 @@ import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import android.app.DatePickerDialog;
 
-import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.text.InputType;
@@ -15,9 +14,12 @@ import android.widget.EditText;
 import java.util.Calendar;
 import android.app.TimePickerDialog;
 import android.widget.ImageButton;
-import android.widget.SeekBar;
 import android.widget.TextView;
 import android.widget.TimePicker;
+
+import com.google.firebase.FirebaseApp;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 public class CreateEvent extends AppCompatActivity {
 
@@ -52,6 +54,20 @@ public class CreateEvent extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_create_event);
+        FirebaseApp.initializeApp(this);
+
+        DatabaseReference reff;
+        Event event = new Event();
+        reff = FirebaseDatabase.getInstance().getReference().child("Event");
+
+        event.setTitle("wwwwwww");
+        event.setLocation("queens");
+        event.setDate("feb 2");
+        event.setType("Educational");
+        event.setHost("kirill");
+        event.setTime("4:20");
+        event.setPrice("$1");
+        reff.push().setValue(event);
 
         ActionBar actionBar = getSupportActionBar(); // or getActionBar();
         getSupportActionBar().setTitle("Create Event");
