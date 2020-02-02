@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "561508025090",
+    "firebase_url": "https://univentsapp.firebaseio.com",
+    "project_id": "univentsapp",
+    "storage_bucket": "univentsapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:561508025090:android:3efbd6e431cc011df3781b",
+        "android_client_info": {
+          "package_name": "com.qhacks.univentsapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "561508025090-stt0gu84vce2vaglc6ngbepu97khcvcj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.qhacks.univentsapp",
+            "certificate_hash": "b59f552272874d47b19d3a55d6efbca608b2658e"
+          }
+        },
+        {
+          "client_id": "561508025090-5ki36onghl3mbkrarp7qjp85oa5rcclv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDcdWNLyjlc_KwaOGDO-d0JKFv0ejEM2AQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "561508025090-5ki36onghl3mbkrarp7qjp85oa5rcclv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
