@@ -10,7 +10,7 @@
         android:layout_marginLeft="100dp"
         android:layout_marginTop="50dp"
         android:ems="10"
-        android:hint="Enter Name" />
+        android:hint="Event Title" />
 
     <EditText
         android:id="@+id/editText1"
@@ -19,7 +19,7 @@
         android:layout_marginLeft="100dp"
         android:layout_marginTop="125dp"
         android:ems="10"
-        android:hint="Enter Date" />
+        android:hint="Date" />
 
     <EditText
         android:id="@+id/editText2"
@@ -28,7 +28,7 @@
         android:layout_marginLeft="100dp"
         android:layout_marginTop="200dp"
         android:ems="10"
-        android:hint="Enter Time" />
+        android:hint="Time" />
 
     <EditText
         android:id="@+id/editText3"
@@ -37,7 +37,7 @@
         android:layout_marginLeft="100dp"
         android:layout_marginTop="275dp"
         android:ems="10"
-        android:hint="Enter Address" />
+        android:hint="Address" />
 
     <EditText
         android:id="@+id/editText4"
@@ -47,7 +47,7 @@
         android:layout_marginTop="350dp"
         android:inputType="number"
         android:ems="10"
-        android:hint="Enter Ticket Price" />
+        android:hint="Ticket Price" />
 
     <Button
         android:id="@+id/button0"

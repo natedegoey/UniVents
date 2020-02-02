@@ -1,5 +1,7 @@
 package com.example.myapp.ui.education;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -13,8 +15,11 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 
+import com.example.myapp.CreateEvent;
 import com.example.myapp.Event;
+import com.example.myapp.MainActivity;
 import com.example.myapp.R;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -27,26 +32,35 @@ public class EducationFragment extends Fragment {
     Event[] events;
     DatabaseReference reff;
     private EducationViewModel educationViewModel;
-    TextView t1,t2,t3,t4;
+
+    TextView title;
+    TextView date;
+    TextView time;
+    FloatingActionButton arrow;
+    FloatingActionButton location;
+    int i=0;
+
+
+
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        educationViewModel =
-                ViewModelProviders.of(this).get(EducationViewModel.class);
+
+
         View root = inflater.inflate(R.layout.fragment_education, container, false);
-        final TextView textView = root.findViewById(R.id.text_dashboard);
-        educationViewModel.getText().observe(this, new Observer<String>() {
-            @Override
-            public void onChanged(@Nullable String s) {
-                textView.setText(s);
-            }
-        });
+
+
+        title = (TextView) root.findViewById(R.id.textView);
+        date = (TextView) root.findViewById(R.id.textView2);
+        time = (TextView) root.findViewById(R.id.textView3);
+        arrow = (FloatingActionButton) root.findViewById(R.id.floatingActionButton2);
+        location = (FloatingActionButton) root.findViewById(R.id.floatingActionButton3);
 
         reff = FirebaseDatabase.getInstance().getReference().child("Event");
         reff.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                long numEvents = dataSnapshot.getChildrenCount();
+                final long numEvents = dataSnapshot.getChildrenCount();
                 events = new Event[(int)numEvents];
                 int counter = 0;
                 for (DataSnapshot child: dataSnapshot.getChildren()) {
@@ -62,16 +76,50 @@ public class EducationFragment extends Fragment {
                     counter++;
                 }
 
+                title.setText(events[i].getTitle());
+                date.setText("Date: "+events[i].getDate());
+                time.setText("Time: "+events[i].getTime());
+
+                arrow.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+
+                        if (i<(events.length-1))
+                            i += 1;
+                        else
+                            i = 0;
+
+                        title.setText(events[i].getTitle());
+                        date.setText("Date: "+events[i].getDate());
+                        time.setText("Time: "+events[i].getTime());
+                    }
+                });
+
+                location.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        Intent intent = new Intent();
+                        intent.setAction(Intent.ACTION_VIEW);
+                        intent.setData(Uri.parse("geo:0,0?q="+events[i].getLocation()));
+                        startActivity(intent);
+
+                    }
+                });
             }
+
+
 
             @Override
             public void onCancelled(@NonNull DatabaseError databaseError) {
 
             }
+
+
         });
 
 
         return root;
     }
+
 
 }
